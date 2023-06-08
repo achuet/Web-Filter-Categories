@@ -8,6 +8,7 @@ jobs:
   run-updater:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: REST API with curl
       run: |
-        curl "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o db.txt
+        curl "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o main/db.txt
