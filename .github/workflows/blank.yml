@@ -1,9 +1,8 @@
 name: "Write Data"
  
 on:
-  push:
-    tags:
-      - '**'
+  schedule:
+    - cron: "*/5 * * * *"
  
 jobs:
   run-updater:
