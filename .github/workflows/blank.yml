@@ -2,13 +2,12 @@ name: "Write Data"
  
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/20 * * * *"
  
 jobs:
   run-updater:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: REST API with curl
       run: |
         curl -s -N "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" --create-dirs  -o main/db.txt
