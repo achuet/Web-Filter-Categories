@@ -10,4 +10,4 @@ jobs:
     steps:
     - name: REST API with curl
       run: |
-        curl "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o main/db.txt
+        curl "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o db.txt
