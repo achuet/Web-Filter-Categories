@@ -1,4 +1,4 @@
-name: "Read Data"
+name: "Data Updater"
  
 on:
   schedule:
