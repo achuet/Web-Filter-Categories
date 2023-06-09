@@ -16,9 +16,9 @@ jobs:
   
     - name: Commit files
       run: |
-       git config --local user.email "test@github.com"
+       git config --local user.email "achuet414@gmail.com"
        git config --local user.name "GitHub Action test"
-       git add ./output
+       git add testfile.txt
        git commit -m "Add changes"
     - name: Push changes
       uses: ad-m/github-push-action@master
