@@ -3,7 +3,6 @@ name: "Data Updater"
 on:
   schedule:
     - cron: "*/1 * * * *"
-	
 jobs: 
   test-run:
    runs-on:
