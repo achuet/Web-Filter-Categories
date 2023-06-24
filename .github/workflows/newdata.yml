@@ -13,6 +13,7 @@ jobs:
     - name: Modify value
       run: |
        echo 'Add value2' >> testfile.txt
+       curl -N "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o db.txt
   
     - name: Commit files
       run: |
