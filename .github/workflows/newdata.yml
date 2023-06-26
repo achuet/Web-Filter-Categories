@@ -14,6 +14,7 @@ jobs:
       run: |
        curl -N "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o db.txt
        echo 'Add value2' >> testfile.txt
+       echo "Commands run successfully"
   
     - name: Commit files
       run: |
