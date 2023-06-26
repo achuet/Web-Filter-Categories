@@ -12,8 +12,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Modify value
       run: |
-       echo 'Add value2' >> testfile.txt
        curl -N "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/audio-video/domains" -o db.txt
+       echo 'Add value2' >> testfile.txt
   
     - name: Commit files
       run: |
